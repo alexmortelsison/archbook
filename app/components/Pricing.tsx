@@ -23,13 +23,13 @@ const Pricing = ({ item }: PricingProps) => {
     toast.success("Successfully added to cart!");
   };
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto mb-24">
       <p className="font-bold text-4xl mb-8">Pricing</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {item.map((plan) => (
           <div
             key={plan.id}
-            className="border h-[500px] bg-slate-800 justify-between items-center flex flex-col px-8 rounded-2xl"
+            className="border h-[500px] bg-slate-800 justify-between items-center flex flex-col px-8 rounded-2xl shadow-gray-500 shadow-xl"
           >
             <h2 className="text-white text-2xl text-center px-2 h-[80px] pt-8">
               {plan.title}
