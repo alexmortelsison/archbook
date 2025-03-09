@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SubHero from "./components/SubHero";
 import StepSection from "./components/StepSection";
+import Pricing from "./components/Pricing";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <SubHero />
       <StepSection />
+      <Pricing />
     </div>
   );
 }
