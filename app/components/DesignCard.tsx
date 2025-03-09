@@ -17,7 +17,7 @@ export default function DesignCard({
       <div className="p-8">
         <Image
           src={image}
-          alt="conc"
+          alt={title}
           width={600}
           height={600}
           className="rounded-xl object-cover h-[400px] w-full"
