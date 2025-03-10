@@ -11,7 +11,7 @@ export default function Navbar() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="border-t border-b py-8 justify-between flex items-center">
+      <div className="border-b py-8 justify-between flex items-center">
         <Link href={"/"} className="text-white font-extrabold text-4xl">
           <div className="flex items-center">
             <BsHouseHeart />

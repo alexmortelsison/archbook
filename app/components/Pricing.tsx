@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { addToCart } from "@/store/features/cartSlice";
+import { redirect } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { toast } from "sonner";
 
@@ -21,6 +22,7 @@ const Pricing = ({ item }: PricingProps) => {
   const handleCheckout = (plan: PriceProps) => {
     dispatch(addToCart(plan));
     toast.success("Successfully added to cart!");
+    return redirect("/cart");
   };
   return (
     <div className="max-w-7xl mx-auto mb-24">
